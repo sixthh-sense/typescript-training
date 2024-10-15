@@ -1,7 +1,7 @@
 class Customer {
 
-    private _firstName: string;
-    private _lastName: string;
+    constructor(private _firstName: string, private _lastName: string) {
+    }
 
     get firstName(): string {
         return this._firstName;
@@ -17,11 +17,6 @@ class Customer {
 
     set lastName(value: string) {
         this._lastName = value;
-    }
-
-    constructor(theFirst: string, theLast: string) {
-        this._firstName = theFirst;
-        this._lastName = theLast;
     }
 }
 
